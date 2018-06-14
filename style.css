@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'fontawesome';
+    src :url('webagency_images/webagency_images/fonts/fontawesome-webfont.eot') format('eot'),
+         url('webagency_images/webagency_images/fonts/fontawesome-webfont.otf') format('otf'),
+         url('webagency_images/webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
+         url('webagency_images/webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('webagency_images/webagency_images/fonts/fontawesome-webfont.svg') format('svg');
+    font-family: 'glyphicons';
+    src :url('webagency_images/webagency_images/fonts/glyphicons-halflings-regular.eot') format('eot'),
+         url('webagency_images/webagency_images/fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('webagency_images/webagency_images/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('webagency_images/webagency_images/fonts/glyphicons-halflings-regular.svg') format('svg');
+    font-family: 'Robotoblack';
+    src :url('webagency_images/webagency_images/fonts/Roboto-Black.ttf') format('truetype');
+    font-family: 'Robotoblackitalic';
+    src :url('webagency_images/webagency_images/fonts/Roboto-BlackItalic.ttf') format('truetype');
+    font-family: 'Robotobold';
+    src :url('webagency_images/webagency_images/fonts/Roboto-Bold.ttf') format('truetype');
+    font-family: 'Robotobolditalic';
+    src :url('webagency_images/webagency_images/fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-family: 'Robotoitalic';
+    src :url('webagency_images/webagency_images/fonts/Roboto-Italic.ttf') format('truetype');
+    font-family: 'Robotolight';
+    src :url('webagency_images/webagency_images/fonts/Roboto-Light.ttf') format('truetype');
+    font-family: 'Robotolightitalic';
+    src :url('webagency_images/webagency_images/fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-family: 'Robotomedium';
+    src :url('webagency_images/webagency_images/fonts/Roboto-Medium.ttf') format('truetype');
+    font-family: 'Robotomediumitalic';
+    src :url('webagency_images/webagency_images/fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-family: 'Robotoregular';
+    src :url('webagency_images/webagency_images/fonts/Roboto-Regular.ttf') format('truetype');
+    font-family: 'Robotothin';
+    src :url('webagency_images/webagency_images/fonts/Roboto-Thin.ttf') format('truetype');
+    font-family: 'Robotothinitalic';
+    src :url('webagency_images/webagency_images/fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+
+h1, h2, h3, h4
+{
+    font-size: 1em;
+}
+
+*
+{
+    font-family: fontawesome, glyphicons, sans-serif;
+}
+
+div
+{   
+    font-weight: bold;
+    color: white;
+    
+    background-image: url(webagency_images/webagency_images/images/slider/bg1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h2, h3
+{   
+    font-weight: normal;
+}
+
+
+h1 span
+{
+    color: #5cadd3;
+}
+
+h4, div h2
+{
+    background-color: #5cadd3;
+    color: white;
+    border: solid;
+    
+}
