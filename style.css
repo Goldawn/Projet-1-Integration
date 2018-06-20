@@ -19,31 +19,61 @@
     font-family: 'Robotoblack';
     src :url('images/fonts/Roboto-Black.ttf') format('truetype');
     }
-    /*
+
+    @font-face {
     font-family: 'Robotoblackitalic';
     src :url('images/fonts/Roboto-BlackItalic.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotobold';
     src :url('images/fonts/Roboto-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotobolditalic';
     src :url('images/fonts/Roboto-BoldItalic.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotoitalic';
     src :url('images/fonts/Roboto-Italic.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotolight';
     src :url('images/fonts/Roboto-Light.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotolightitalic';
     src :url('images/fonts/Roboto-LightItalic.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotomedium';
     src :url('images/fonts/Roboto-Medium.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotomediumitalic';
     src :url('images/fonts/Roboto-MediumItalic.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotoregular';
     src :url('images/fonts/Roboto-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotothin';
     src :url('images/fonts/Roboto-Thin.ttf') format('truetype');
+    }
+
+    @font-face {
     font-family: 'Robotothinitalic';
     src :url('images/fonts/Roboto-ThinItalic.ttf') format('truetype');
-  }
-*/
+    }
 
 
 body
@@ -56,6 +86,18 @@ body
 main
 {
   padding-top: 120px;
+}
+
+i
+{
+  color: rgb(92, 173, 211);
+  font-size: 3.5em;
+  border-style: solid;
+  border-width: thin;
+  border-color: grey;
+  border-radius: 50%;
+  float: left;
+  margin-top: 20px;
 }
 
 a
@@ -102,7 +144,6 @@ header
 {
   background-color: red;
   position: relative;
-  margin-bottom: 180px;
 }
       .main img
       {
