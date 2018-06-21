@@ -88,6 +88,17 @@ a
   text-decoration: none;
 }
 
+h1
+{
+  font-size: 2.9em;
+}
+
+h2
+{
+  font-size: 2.9em;
+  text-align: center;
+}
+
 header
 {
   padding: 25px 190px;
@@ -145,11 +156,6 @@ header
         color: white;
       }
 
-            h1
-            {
-              font-size: 2.9em;
-            }
-
             .color
             {
               color: rgb(92, 173, 211);
@@ -186,6 +192,11 @@ header
   padding-top: 120px;
 }
 
+
+/* {
+  text-align: center;
+} */
+
       .services
       {
         padding-top: 80px;
@@ -197,26 +208,40 @@ header
               height: 530px;
               width: 50%;
               background-color: grey;
+              display: flex;
             }
+
+                  .mac img
+                  {
+                    width: 70%;
+                    margin: auto;
+                  }
 
             .bloc_description
             {
+              width: 50%;
               background-color: purple;
-
-            }
-
-            .ico1
-            {
-
-            }
-
-            .description
-            {
               display: flex;
-              flex-direction: row;
+              flex-direction: column;
+              justify-content: flex-end;
             }
-.description_text
-{
-  display: flex;
-  flex-direction: column;
-}
+
+                  .description
+                  {
+                    background-color: green;
+                    display: flex;
+                    align-items: flex-start;  /* test */
+                    /* flex-direction: row; */
+                  }
+
+                        .ico
+                        {
+                          margin: 0 30px;
+                          background-color: yellow;
+                        }
+
+                        .description_text
+                        {
+                          display: flex;
+                          flex-direction: column;
+                        }
