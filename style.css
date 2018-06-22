@@ -71,7 +71,7 @@ main
   padding-top: 120px;
 }
 
-i
+.ico i
 {
   color: rgb(92, 173, 211);
   font-size: 2.6em;
@@ -81,6 +81,8 @@ i
   border-radius: 50%;
   padding: 17px;
   margin-top: 10px;
+  width: 43.2px;
+  height: 43.2px;
 }
 
 a
@@ -148,7 +150,7 @@ header
 
 .main
 {
-  background-color: red;
+  /* background-color: red; */
   position: relative;
 }
       .main img
@@ -215,8 +217,37 @@ header
       .services
       {
         display: flex;
+        margin-bottom: 100px;
         /* padding-top: 150px; */
       }
+
+            .linestyle
+            {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+
+                  .line
+                  {
+                    width: 180px;
+                    height: 1px;
+                    background-color: black;
+                    position: absolute;
+                  }
+
+                  .linestyle_cercle
+                  {
+                    color: rgb(92, 173, 211);
+                    background-color: white;
+                    border-style: solid;
+                    border-color: white;
+                    border-radius: 50%;
+                    position: relative;
+                    top: -14px;
+                    font-size: 0.9em;
+                    padding: 3px;
+                  }
 
             .mac
             {
@@ -264,14 +295,15 @@ header
 
                               .cercle i
                               {
+                                color: rgb(92, 173, 211);
                                 background-color: white;
                                 border-style: solid;
                                 border-color: white;
                                 border-radius: 50%;
                                 position: relative;
-                                top: 26px;
-                                left: 92px;
-                                font-size: 1.2em;
+                                top: 37px;
+                                left: 94px;
+                                font-size: 0.9em;
                                 padding: 3px;
                               }
 
