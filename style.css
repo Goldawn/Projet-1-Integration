@@ -66,9 +66,14 @@ body
   font-family: 'Robotoblack', sans-serif;
 }
 
-main
+main, .headerservices, .portfolio
 {
   padding-top: 120px;
+}
+
+.headerservices
+{
+  margin-top: 20px;
 }
 
 .ico i
@@ -76,8 +81,8 @@ main
   color: rgb(92, 173, 211);
   font-size: 2.6em;
   border-style: solid;
-  border-width: thin;
-  border-color: grey;
+  border-width: 2px;
+  border-color: rgb(229,229,229);
   border-radius: 50%;
   padding: 17px;
   margin-top: 10px;
@@ -103,7 +108,8 @@ h2
 
 .headerservices h2, .portfolio h2
 {
-  font-size: 2.9em;
+  font-size: 4.3em;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -199,12 +205,6 @@ header
                   font-size: 1.3em;
                 }
 
-
-.headerservices
-{
-  padding-top: 120px;
-}
-
 .headerservices > p, .portfolio > p
 {
   text-align: center;
@@ -230,9 +230,9 @@ header
 
                   .line
                   {
-                    width: 180px;
+                    width: 220px;
                     height: 1px;
-                    background-color: black;
+                    background-color: rgb(229,229,229);
                     position: absolute;
                   }
 
@@ -244,9 +244,9 @@ header
                     border-color: white;
                     border-radius: 50%;
                     position: relative;
-                    top: -14px;
-                    font-size: 0.9em;
-                    padding: 3px;
+                    top: -17px;
+                    font-size: 1.1em;
+                    padding: 5px;
                   }
 
             .mac
@@ -324,3 +324,100 @@ header
                           margin-top: 0;
                           margin-bottom: 10px;
                         }
+
+
+/* ====================================================================================             MAQUETTE 3               ==================================================================================================== */
+.pannel
+{
+  display: flex;
+  justify-content: center;
+}
+
+.pannel div
+{
+  display: flex;
+  background-color: rgb(229,229,229);
+  margin: 60px 0;
+  padding: 0 25px;
+}
+
+.pannel_left
+{
+  border-radius: 7px 0 0 7px;
+}
+.pannel_right
+{
+  border-radius: 0 7px 7px 0;
+}
+
+.pannel h3
+{
+  /* margin: 10px; */
+  font-family: Robotoregular;
+  font-size: 1.3em;
+}
+
+.pannel div:hover
+{
+  background-color: rgb(92, 173, 211);
+  color: white;
+}
+
+.allprojects
+{
+  margin: 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio_img
+{
+  width: 400px;
+  height: 267px;
+  margin: 20px;
+}
+
+.portfolio_img img
+{
+  width: 100%;
+}
+
+.bandeau
+{
+  /* opacity: 0; */
+  position: relative;
+  bottom: 107px;
+  background-color: rgba(0,0,0,.7);
+  height: 87px;
+}
+
+.bandeau p
+{
+  padding-left: 15px;
+  color: white;
+  font-family: Robotoregular;
+}
+
+.bandeau p:first-child
+{
+  padding-top: 15px;
+  font-family: Robotoblack;
+}
+
+.ico_eye
+{
+  position: relative;
+  bottom: 110px;
+  left: 330px;
+}
+
+.ico_eye i
+{
+
+  color: white;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: white;
+  background-color: rgb(92, 173, 211);
+  padding: 15px;
+}
