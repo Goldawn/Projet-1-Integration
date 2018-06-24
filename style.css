@@ -410,14 +410,22 @@ header
 {
   opacity: 0;
   position: relative;
-  bottom: 107px;
-  background-color: rgba(0,0,0,.7);
-  height: 87px;
+  bottom: 271px;
+  height: 267px;
+  width: 400px;
 }
 
 .hidden_bandeau
 {
-  /* height: 180px; */
+  height: 180px;
+}
+
+.shown_bandeau
+{
+  height: 87px;
+  background-color: rgba(0,0,0,.6);
+  position: relative;
+  bottom: 16px;
 }
 
 .bandeau p
@@ -441,7 +449,7 @@ header
 .ico_eye
 {
   position: relative;
-  bottom: 110px;
+  bottom: 130px;
   left: 330px;
 }
 
