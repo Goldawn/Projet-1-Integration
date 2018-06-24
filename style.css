@@ -76,20 +76,6 @@ main, .headerservices, .portfolio
   margin-top: 20px;
 }
 
-.ico i
-{
-  color: rgb(92, 173, 211);
-  font-size: 2.6em;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(229,229,229);
-  border-radius: 50%;
-  padding: 17px;
-  margin-top: 10px;
-  width: 43.2px;
-  height: 43.2px;
-}
-
 a
 {
   color: black;
@@ -113,7 +99,7 @@ h2
   text-align: center;
 }
 
-.headerservices p, .portfolio p, .contact p
+.headerservices p, .portfolio p, .contact p, .pannel
 {
  color: #686C71;
 }
@@ -208,6 +194,8 @@ header
 .headerservices > p, .portfolio > p
 {
   text-align: center;
+  font-size: 1.3em;
+  font-family: Robotomedium;
 }
 
 /* {
@@ -287,6 +275,20 @@ header
                           /* background-color: yellow; */
                         }
 
+                              .ico i
+                              {
+                                color: rgb(92, 173, 211);
+                                font-size: 2.6em;
+                                border-style: solid;
+                                border-width: 2px;
+                                border-color: rgb(229,229,229);
+                                border-radius: 50%;
+                                padding: 17px;
+                                margin-top: 10px;
+                                width: 43.2px;
+                                height: 43.2px;
+                              }
+
                               .cercle
                               {
                                 position: absolute;
@@ -302,7 +304,7 @@ header
                                 border-radius: 50%;
                                 position: relative;
                                 top: 37px;
-                                left: 94px;
+                                left: 96px;
                                 font-size: 0.9em;
                                 padding: 3px;
                               }
@@ -333,7 +335,7 @@ header
   justify-content: center;
 }
 
-.pannel div
+.pannel_left, .pannel_center, .pannel_right
 {
   display: flex;
   background-color: rgb(229,229,229);
@@ -357,10 +359,32 @@ header
   font-size: 1.3em;
 }
 
-.pannel div:hover
+.pannel_left:hover, .pannel_center:hover, .pannel_right:hover
 {
   background-color: rgb(92, 173, 211);
   color: white;
+}
+
+.hover_arrow
+{
+  position: relative;
+
+}
+
+.hover_arrow div
+{
+  width: 116.6px;
+  height: 5px;
+  background-color: #468CAD;
+}
+
+.hover_arrow i
+{
+  color: #468CAD;
+  font-size: 2em;
+  position: relative;
+  top: -13px;
+  left: 48.3px;
 }
 
 .allprojects
@@ -384,11 +408,16 @@ header
 
 .bandeau
 {
-  /* opacity: 0; */
+  opacity: 0;
   position: relative;
   bottom: 107px;
   background-color: rgba(0,0,0,.7);
   height: 87px;
+}
+
+.hidden_bandeau
+{
+  /* height: 180px; */
 }
 
 .bandeau p
@@ -402,6 +431,11 @@ header
 {
   padding-top: 15px;
   font-family: Robotoblack;
+}
+
+.bandeau:hover
+{
+  opacity: 1;
 }
 
 .ico_eye
@@ -420,4 +454,12 @@ header
   border-color: white;
   background-color: rgb(92, 173, 211);
   padding: 15px;
+}
+
+
+/* ========================================================================================================   MAQUETTE 4   =============================================================================================================== */
+
+.map img
+{
+  width: 100%;
 }
