@@ -150,7 +150,6 @@ li
 
 .main
 {
-  /* background-color: red; */
   position: relative;
 }
 .main img
@@ -161,7 +160,7 @@ li
 .webagency
 {
   background-color: ;
-  width: 800px;
+  max-width: 800px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -180,9 +179,9 @@ li
 
 .bouton
 {
-  background-color: rgb(92, 173, 211);      /* ombre bot : rgb(68, 148, 187); le gris du nav est 122 122 122 et noir 85 85 85 */
-  width: 160px;
-  height: 60px;
+  background-color: rgb(92, 173, 211);
+  max-width: 160px;
+  max-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,12 +191,6 @@ li
   margin-top: 30px;
 }
 
-/* .ombre
-{
-background-color: rgb(68, 148, 187);
-width: 100%;
-height: 3px;
-} */
 
 .bouton p
 {
@@ -225,7 +218,6 @@ height: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: relative; */
 }
 
 .line
@@ -233,7 +225,6 @@ height: 3px;
   width: 220px;
   height: 1px;
   background-color: rgb(229,229,229);
-  /* position: absolute; */
 }
 
 .linestyle_cercle
@@ -243,7 +234,6 @@ height: 3px;
   border-style: solid;
   border-color: white;
   border-radius: 50%;
-  /* position: absolute; */
   transform: translateY(-50%);
   font-size: 1.1em;
   padding: 5px;
@@ -253,7 +243,6 @@ height: 3px;
 {
   height: 530px;
   width: 50%;
-  /* background-color: grey; */
   display: flex;
 }
 
@@ -277,12 +266,12 @@ height: 3px;
   display: flex;
   padding-bottom: 20px;
   align-items: flex-start;
-  position: relative;
 }
 
 .ico
 {
   margin: 0 30px;
+  position: relative;
 }
 
 .ico i
@@ -295,8 +284,8 @@ height: 3px;
   border-radius: 50%;
   padding: 17px;
   margin-top: 10px;
-  width: 43.2px;
-  height: 43.2px;
+  max-width: 43.2px;
+  max-height: 43.2px;
 }
 
 .cercle
@@ -304,7 +293,7 @@ height: 3px;
   position: absolute;
   border: 15px;
   top: 38px;
-  left:96px;
+  left: 67px;
 }
 
 .cercle i
@@ -314,11 +303,9 @@ height: 3px;
   border-style: solid;
   border-color: white;
   border-radius: 50%;
-  position: absolute;
-  top: px;
-  left: px;
   font-size: 0.9em;
   padding: 3px;
+  margin-top: 0;
 }
 
 .description_text
@@ -330,7 +317,7 @@ height: 3px;
 .description_text h3
 {
   font-size: 1.5em;
-  margin: 10px 0;  /* valeur = margin i */
+  margin: 10px 0;
 }
 
 .description_text > p
@@ -339,7 +326,7 @@ height: 3px;
   margin-bottom: 10px;
   font-family: Robotomedium;
   font-size: 1.1em;
-  /* AUGMENTER INTERLIGNE */
+  line-height: 1.9em;
 }
 
 
@@ -350,7 +337,7 @@ height: 3px;
   justify-content: center;
 }
 
-.pannel_left, .pannel_center, .pannel_right
+.pannel_tab
 {
   background-color: rgb(229,229,229);
   margin: 40px 0;
@@ -372,7 +359,7 @@ height: 3px;
 {
   font-family: Robotoregular;
   font-size: 1.3em;
-  text-align: center;    /* A voir */
+  text-align: center;
 }
 
 .hover_arrow
@@ -388,6 +375,7 @@ height: 3px;
   background-color: rgb(92, 173, 211);
   color: white;
   box-shadow: 0 -5px 0 #468CAD inset;
+  cursor: pointer;
 }
 
 .pannel_left:hover .hover_arrow, .pannel_center:hover .hover_arrow, .pannel_right:hover .hover_arrow
@@ -406,6 +394,7 @@ height: 3px;
   margin: 0 60px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio_img
@@ -414,6 +403,7 @@ height: 3px;
   width: 400px;
   height: 267px;
   margin: 20px;
+  overflow: hidden;
 }
 
 .portfolio_img img
@@ -423,11 +413,10 @@ height: 3px;
 
 .bandeau
 {
-  opacity: 0;
   position: absolute;
-  bottom: 0px;
-  height: 267px;
-  width: 400px;
+  top: 0;
+  height: 380px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -437,6 +426,8 @@ height: 3px;
 {
   height: 87px;
   background-color: rgba(0,0,0,.6);
+  transition: transform 1s ease-in;
+  position: relative;
 }
 
 .bandeau p
@@ -451,9 +442,10 @@ height: 3px;
   font-family: Robotoblack;
 }
 
-.bandeau:hover
+.bandeau:hover .shown_bandeau
 {
-  opacity: 1;
+  transform: translateY(-113px);
+  transition: transform .5s;
 }
 
 .ico_eye
@@ -461,7 +453,7 @@ height: 3px;
   width: 52px;
   position: absolute;
   right: 20px;
-  bottom: 61px;
+  top: -26px;
 }
 
 .ico_eye i
@@ -476,7 +468,16 @@ height: 3px;
 }
 
 
-/* ========================================================================================================   MAQUETTE 4   =================================================================================== */
+/*
+    ██           ███    ███  █████   ██████  ██    ██ ███████ ████████ ████████ ███████     ██   ██              ██
+   ██  ▄ ██ ▄    ████  ████ ██   ██ ██    ██ ██    ██ ██         ██       ██    ██          ██   ██     ▄ ██ ▄  ██
+  ██    ████     ██ ████ ██ ███████ ██    ██ ██    ██ █████      ██       ██    █████       ███████      ████  ██
+ ██    ▀ ██ ▀    ██  ██  ██ ██   ██ ██ ▄▄ ██ ██    ██ ██         ██       ██    ██               ██     ▀ ██ ▀██
+██               ██      ██ ██   ██  ██████   ██████  ███████    ██       ██    ███████          ██          ██
+                                        ▀▀
+*/
+
+
 #contact
 {
   position: relative;
@@ -485,7 +486,7 @@ height: 3px;
 
 .map
 {
-  height: 800px;
+  height: 825px;
   position: relative;
 }
 
@@ -551,6 +552,7 @@ input
 
 textarea
 {
+  resize: vertical;
   border-radius: 5px;
   border: 1px solid rgb(200,200,200);
   padding-left: 20px;
@@ -564,8 +566,8 @@ textarea
 input[type=submit]
 {
   padding-left: 0;
-  background-color: rgb(92, 173, 211);      /* ombre bot : rgb(68, 148, 187); le gris du nav est 122 122 122 et noir 85 85 85 */
-  width: 160px;
+  background-color: rgb(92, 173, 211);
+  max-width: 160px;
   height: 45px;
   border-radius: 4px;
   color: white;
@@ -573,4 +575,5 @@ input[type=submit]
   border-width: 0;
   font-family: Robotomedium;
   box-shadow: 0 -4px 0 #468CAD inset;
+  cursor: pointer;
 }
