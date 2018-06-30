@@ -425,6 +425,7 @@ ul
 
 .allprojects
 {
+  min-width: 300px;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -679,6 +680,10 @@ input[type=submit]
   {
     flex-direction: column;
   }
+  .align_projetcs
+  {
+    padding: 0 40px;
+  }
   header
   {
     padding: 5px 0;
@@ -723,6 +728,10 @@ input[type=submit]
   {
     padding: 0 10px;
   }
+  .hover_arrow
+  {
+    left:47px;
+  }
   .allprojects
   {
     justify-content: center;
@@ -740,6 +749,47 @@ input[type=submit]
 
 @media all and (max-width: 490px)
 {
+  .main
+  {
+    max-width: 490px;
+    height: 400px;
+  }
+  .main img
+  {
+    display: none;
+  }
+  .webagency
+  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: black;
+    text-align: center;
+    background-color: #f5f5f5;
+    transform: translateY(0);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  h1
+  {
+    font-size: 2em;
+  }
+
+  .webagency  p
+  {
+    font-size: 1.5em;
+  }
+  .bouton
+  {
+    margin: auto;
+    width: 140px;
+    box-shadow: 0 -3px 0 #468CAD inset;
+  }
   .description
   {
     flex-direction: column;
@@ -749,6 +799,10 @@ input[type=submit]
   {
     top: 78px;
     left: 29px;
+  }
+  #services
+  {
+    font-size: 0.9em;
   }
   .description_text h3
   {
@@ -766,8 +820,75 @@ input[type=submit]
   {
     text-align: center;
   }
+  #portfolio
+  {
+    font-size: 0.9em;
+  }
+  .pannel h3
+  {
+    font-size: 1em;
+  }
+  .pannel_tab
+  {
+    padding: 0
+  }
+  .hover_arrow
+  {
+    top:35px;;
+    left:36px;
+  }
   .map
   {
     display: none;
+  }
+  form
+  {
+    background-color: #eaf4f6;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 390px)
+{
+  .header_bloc
+  {
+    padding: 0;
+  }
+  ul
+  {
+    width: 280px;
+  }
+  #services
+  {
+    font-size: 0.8em;
+  }
+  .cercle
+  {
+    top: 74px;
+    left: 26px;
+  }
+  #portfolio
+  {
+    font-size: 0.8em;
+  }
+  .align_projetcs
+  {
+    padding: 0;
+  }
+  .pannel
+  {
+    padding: 0 5px;
+  }
+  .hover_arrow
+  {
+    left: 32px;
+    top: 30px;
+  }
+  #contact
+  {
+    font-size: 0.8em;
+  }
+  form
+  {
+    height: 500px;
   }
 }
