@@ -150,7 +150,13 @@ h1
 .ico
 {
   margin-left: 15px;
-  margin-right: 25px;
+  flex:1;
+}
+
+.description_text
+{
+  flex:5;
+  margin-right: 15px;
 }
 
 .ico i
@@ -160,6 +166,7 @@ h1
   max-width: 20px;
   border-width: 1px;
 }
+
 .cercle
 {
   top:20px;
