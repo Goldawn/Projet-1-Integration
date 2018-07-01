@@ -164,7 +164,6 @@ ul
 
 .webagency
 {
-  background-color: ;
   max-width: 800px;
   position: absolute;
   top: 50%;
@@ -648,6 +647,11 @@ input[type=submit]
   {
     width: 400px;
   }
+}
+
+@media all and (max-width: 999px)
+{
+
 }
 
 @media all and (max-width: 960px)
