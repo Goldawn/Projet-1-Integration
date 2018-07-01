@@ -514,7 +514,7 @@ ul
 #contact
 {
   position: relative;
-  margin-top: 120px;
+  top: 120px;
 }
 
 .map
@@ -884,7 +884,7 @@ input[type=submit]
   }
   .hover_arrow
   {
-    left: 32px;
+    left: 35px;
     top: 30px;
   }
   #contact
