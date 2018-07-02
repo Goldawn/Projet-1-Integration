@@ -66,12 +66,12 @@ body
   font-family: 'Robotoblack', sans-serif;
 }
 
-main, .headerservices, .portfolio
+main, #services, #portfolio
 {
   padding-top: 120px;
 }
 
-.headerservices
+#services
 {
   margin-top: 20px;
 }
@@ -93,14 +93,14 @@ h2
   color: #272727;
 }
 
-.headerservices h2, .portfolio h2
+#services h2, #portfolio h2
 {
   font-size: 4.3em;
   margin: 20px 0;
   text-align: center;
 }
 
-.headerservices p, .portfolio p, .contact p, .pannel
+#services p, #portfolio p, #contact p, .pannel
 {
   color: #686C71;
 }
@@ -117,7 +117,6 @@ header
 {
   width: 100%;
   position: fixed;
-  padding: 31px 0;
   top: 0;
   left: 0;
   z-index: 1;
@@ -130,6 +129,7 @@ header
 .header_bloc
 {
   width: 1360px;
+  height: 120px;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
@@ -142,15 +142,35 @@ header
   height: 57px;
 }
 
+nav
+{
+  height: 100%;
+}
+
 ul
 {
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
   padding-left: 0;
   font-family: 'Robotomedium';
-  width: 360px;
+  margin: 0;
+}
+
+li
+{
+  padding-top: 50px;
+  width: 90px;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+li:hover
+{
+  box-shadow: 0 5px 0 #5CADD3 inset;
 }
 
 .main
@@ -212,7 +232,7 @@ ul
 
 
 
-.headerservices > p, .portfolio > p
+#services > p, #portfolio > p
 {
   text-align: center;
   font-size: 1.3em;
@@ -231,6 +251,7 @@ ul
 #portfolio
 {
   margin: auto;
+  background-color: #F5F5F5;
 }
 
 .linestyle
@@ -523,7 +544,7 @@ ul
   position: relative;
 }
 
-.map div
+.filtre
 {
   position: absolute;
   height: 100%;
@@ -599,6 +620,7 @@ input
   height: 40px;
   font-family: Robotomedium;
   font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 textarea
@@ -612,6 +634,7 @@ textarea
   height: 200px;
   font-family: Robotomedium;
   font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 input[type=submit]
@@ -649,10 +672,6 @@ input[type=submit]
   }
 }
 
-@media all and (max-width: 999px)
-{
-
-}
 
 @media all and (max-width: 960px)
 {
@@ -676,7 +695,7 @@ input[type=submit]
   {
     max-width: 120px;
   }
-  .headerservices h2, .portfolio h2
+  #services h2, #portfolio h2
   {
     font-size: 3.4em;
   }
@@ -712,7 +731,7 @@ input[type=submit]
   {
     font-size: 1.5em;
   }
-  .headerservices h2, .portfolio h2
+  #services h2, #portfolio h2
   {
     font-size: 3em;
   }
