@@ -4,33 +4,8 @@
 }
 
 @font-face {
-  font-family: 'Robotoblackitalic';
-  src :url('images/fonts/Roboto-BlackItalic.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Robotobold';
   src :url('images/fonts/Roboto-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Robotobolditalic';
-  src :url('images/fonts/Roboto-BoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Robotoitalic';
-  src :url('images/fonts/Roboto-Italic.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Robotolight';
-  src :url('images/fonts/Roboto-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Robotolightitalic';
-  src :url('images/fonts/Roboto-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -39,24 +14,10 @@
 }
 
 @font-face {
-  font-family: 'Robotomediumitalic';
-  src :url('images/fonts/Roboto-MediumItalic.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Robotoregular';
   src :url('images/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Robotothin';
-  src :url('images/fonts/Roboto-Thin.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Robotothinitalic';
-  src :url('images/fonts/Roboto-ThinItalic.ttf') format('truetype');
-}
 
 
 body
@@ -100,7 +61,7 @@ h2
   text-align: center;
 }
 
-#services p, #portfolio p, #contact p, .pannel
+#services p, .sous_titreo p, #contact p, .pannel
 {
   color: #686C71;
 }
@@ -702,6 +663,11 @@ input[type=submit]
   .header_bloc
   {
     flex-direction: column;
+  }
+  li
+  {
+    padding-top: 25px;
+    margin-top: 5px;
   }
   .align_projetcs
   {
